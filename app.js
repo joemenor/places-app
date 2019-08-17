@@ -11,5 +11,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port,() => {
-  console.log(`Server running at port `+port);
+  console.log(`Server running at port `+port)
+  console.log('index file included');
 });
