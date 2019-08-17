@@ -1,7 +1,7 @@
 {
-  "name": "coolnodeapp",
+  "name": "places-app",
   "version": "1.0.0",
-  "description": "node app ",
+  "description": "node places app ",
   "main": "app.js",
   "scripts": {
   "start": "node app.js"
@@ -10,10 +10,10 @@
   "type": "git",
   "url": ""
 },
-  "author": "",
+  "author": "Joe Menor",
   "license": "ISC",
   "bugs": {
   "url": ""
 },
-  "homepage": ""
+  "homepage": "/index.html"
 }
