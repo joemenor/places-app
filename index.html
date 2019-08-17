@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Notes App</title>
+    <head>
+      
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Fapple-touch-icon.png?v=1565916052945">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Ffavicon-32x32.png?v=1565916069706">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Ffavicon-16x16.png?v=1565916058025">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+            <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+      <!--Import materialize.css-->
+            <!-- <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/> -->
+            <link rel="stylesheet" href="/css/stylesheet.css" type="text/css" charset="utf-8" />
+            <script src="https://kit.fontawesome.com/038a980571.js"></script>
+            <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+    </head>
+    <body>
+        <div class="header">
+                <h1 id="heading">Notes App</h1>
+        </div>
+        
+        <form id="new-note-form">
+                <input id="newnotetitle" placeholder="New Note Title" name="title">
+                <input id="newnotebody" placeholder="New Note Body" name="body">
+                <button id ="newnotebutton"><i class="fas fa-save"></i></button>
+        </form>
+        <select id="sortby">
+                <option id="byedited">Sort By Last Updated</option>
+                <option id="byalphabetically">Sort Alphabetically</option>
+                <option id="bycreated">Sort By New</option>
+        </select>
+        <input type="text" id="inputbox" placeholder="Search...">
+        
+        <div id="notes">
+            <table id="notetable">
+                
+            </table>
+        </div>
+        
+        <div id="note-cards-div"></div>
+      <div id="card-maps-div"></div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+                    <span class="close">&times;</span>
+                
+                  
+        <a href="/index.html">Home</a>
+        <input id="note-title">
+        <textarea id="note-body"></textarea>
+        <p id="updated-label"></p>
+        </div>
+    </div>
+      
+      
+            
+<!--       offline stuff -->
+      <script src="/upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'offline.html',
+      'assets': [
+        'css/bootstrap.min.css',
+        'css/offline.css',
+        'css/stylesheet.css',
+        'css/index.html']
+    });
+  </script>
+<!--       end offline stuff -->
+      
+      
+      
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSA9XeaEktTnCMXp1xitlpfYIq9YovvQ" type="text/javascript"></script>
+        
+        <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+        <script src="uuidv4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+        <script src="notes-functions.js"></script>
+        <script src="notes-app.js"></script>
+    </body>
+</html>
