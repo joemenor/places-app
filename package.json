@@ -2,7 +2,7 @@
   "name": "places-app",
   "version": "1.0.0",
   "description": "node places app ",
-  "main": "app.js",
+  "main": "notes-app.js",
   "scripts": {
   "start": "node app.js"
 },
