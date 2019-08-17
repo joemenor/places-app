@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><title></title>
+<head>
+  
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Fapple-touch-icon.png?v=1565916052945">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Ffavicon-32x32.png?v=1565916069706">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/ecb3536a-ff35-40a8-ac25-20fba08418e2%2Ffavicon-16x16.png?v=1565916058025">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+   <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 200px;
+        width: 150px;
+      }
+      
+    </style>
+  
+        <link rel="stylesheet" href="/css/stylesheet.css" type="text/css" charset="utf-8" />
+        <script src="https://kit.fontawesome.com/038a980571.js"></script>
+        <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+    <body>
+        <div class="header">
+      <h1 id="heading-edit">Edit</h1>
+      </div>
+      <div id="info-main">
+        <a id="home-button" href="/index.html"><i class="fas fa-house-damage"></i></a>
+      <input id="note-title"><br>
+      </div>
+        
+      <div id="info-body">
+        <div id="info">
+          <textarea label="notes" id="note-body"></textarea><br>
+          <textarea label="address" id="address-label"></textarea>
+        </div>
+        <div id="map"></div>
+      </div>
+<!--       <div class="map-div">
+        <iframe id="map-spot" width="100" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div> -->
+      
+      
+        <p id="updated-label"></p>
+        
+      
+      
+      
+      
+<!--       offline stuff -->
+      <script src="/upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'offline.html',
+      'assets': [
+        'css/bootstrap.min.css',
+        'css/offline.css',
+        'css/stylesheet.css',
+        'css/edit.html']
+    });
+  </script>
+<!--       end offline stuff -->
+      
+      
+      
+      
+      
+      
+      
+      
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSA9XeaEktTnCMXp1xitlpfYIq9YovvQ" type="text/javascript"></script>
+      
+    </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="notes-functions.js"></script>
+        <script src="notes-edit.js"></script>
+  
+</html>
+

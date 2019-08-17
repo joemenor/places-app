@@ -1,0 +1,12 @@
+{
+    "name": "places-app",
+    "short_name": "places",
+    "start_url": "/index.html",
+    "scope": "./",
+    "icons": [
+        
+    ],
+    "theme_color": "#4a5159",
+    "background_color": "#4a5159",
+    "display": "standalone"
+}
